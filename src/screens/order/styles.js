@@ -20,6 +20,7 @@ const styles = StyleSheet.create({
     fontSize: 12,
     color: appstyles.color.COLOR_PRIMARY,
     lineHeight: 16,
+    fontFamily: appstyles.fonts.FONT_REGULAR,
   },
   cartItemsNumber: {
     fontSize: 12,
@@ -35,17 +36,26 @@ const styles = StyleSheet.create({
   summaryLabel: {
     color: '#00000060',
     fontSize: appstyles.fontsize.s,
+    fontFamily: appstyles.fonts.FONT_REGULAR,
   },
   textL: {
-
+    fontFamily: appstyles.fonts.FONT_REGULAR,
   },
   textDanger: {
     color: appstyles.color.COLOR_DANGER,
+    fontFamily: appstyles.fonts.FONT_REGULAR,
   },
   textPrimary: {
     color: appstyles.color.COLOR_PRIMARY,
     fontSize: appstyles.fontsize.l,
     fontWeight: 'bold',
+    fontFamily: appstyles.fonts.FONT_REGULAR,
+  },
+  cancelButton: {
+    color: '#00000060', 
+    fontWeight: '400',
+    fontFamily: appstyles.fonts.FONT_REGULAR,
+    fontSize: 14,
   }
 });
 

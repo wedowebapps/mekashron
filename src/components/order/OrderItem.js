@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
     backgroundColor: appstyles.color.COLOR_WHITE,
     marginBottom: 10,
     padding: 10,
-    marginHorizontal: 2,
+    marginHorizontal: 3,
     borderRadius: 3,
   },
   productImage: {
@@ -65,7 +65,8 @@ const styles = StyleSheet.create({
     height: 18,
   },
   productTitle: {
-    fontSize: appstyles.fontsize.m
+    fontSize: appstyles.fontsize.m,
+    fontFamily: appstyles.fonts.FONT_REGULAR,
   },
   priceContainer: {
     flexDirection: 'column',
@@ -77,19 +78,22 @@ const styles = StyleSheet.create({
     fontSize: appstyles.fontsize.l,
     fontWeight: 'bold',
     lineHeight: 25,
+    fontFamily: appstyles.fonts.FONT_REGULAR,
   },
   itemPrice: {
     color: '#00000060',
     fontSize: appstyles.fontsize.m,
+    fontFamily: appstyles.fonts.FONT_REGULAR,
   },
   discountPrice: {
     color: appstyles.color.COLOR_DANGER,
     lineHeight: 19,
+    fontFamily: appstyles.fonts.FONT_REGULAR,
   },
   boldtext: {
-    fontWeight: 'bold',
     fontSize: appstyles.fontsize.m,
     lineHeight: 19,
+    fontFamily: appstyles.fonts.FONT_BOLD,
   }
 })
 

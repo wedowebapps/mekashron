@@ -113,8 +113,8 @@ const styles = StyleSheet.create({
   },
   buttontext: {
     textAlign: 'center',
-    fontSize: appstyles.fontsize.l,
-    fontWeight: 'bold',
+    fontSize: appstyles.fontsize.m,
+    fontFamily: appstyles.fonts.FONT_BOLD,
   },
   buttonBlock: {
     flex: 1,

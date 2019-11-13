@@ -1,3 +1,4 @@
+import {Platform} from 'react-native'
 const AppStyles = {
   color: {
     COLOR_PRIMARY: '#151515',
@@ -12,8 +13,8 @@ const AppStyles = {
     PRODUCT_IMAGE_PLCEHOLDER_BG: '#DFDFDF',
   },
   fonts: {
-    // FONT_REGULAR: 'Roboto-Regular',
-    // FONT_MEDIUM: 'Roboto-Medium'
+    FONT_REGULAR:  Platform.OS == 'ios' ? 'OpenSans-Regular' : 'OpenSans',
+    FONT_BOLD:  Platform.OS == 'ios' ? 'OpenSans-Bold' : 'OpenSans-Bold',
   },
   fontsize: {
     xl: 20,
@@ -21,6 +22,16 @@ const AppStyles = {
     m: 14,
     s: 13,
     xs: 12,
+  },
+  headerShadow: {
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 4,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 2.62,
+    elevation: 5,
   },
   inputShadow: {
     shadowColor: "#000",
@@ -30,7 +41,7 @@ const AppStyles = {
     },
     shadowOpacity: 0.10,
     shadowRadius: 2.62,
-    elevation: 4,
+    elevation: 5,
   },
   buttonShadow: {
     shadowColor: "#000",
@@ -38,7 +49,7 @@ const AppStyles = {
       width: 0,
       height: 4,
     },
-    shadowOpacity: 0.10,
+    shadowOpacity: 0.20,
     shadowRadius: 2.62,
     elevation: 4,
   },

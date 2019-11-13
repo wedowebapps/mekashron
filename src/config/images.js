@@ -5,6 +5,7 @@ const images = {
     hamburger: require('../assets/icons/hamburger-icon.png'),
     scanner: require('../assets/icons/scanner-icon.png'),
     search: require('../assets/icons/search-icon.png'),
+    caretDown: require('../assets/icons/caret-down.png'),
   },
   image: {
     user: require('../assets/images/user.png'),

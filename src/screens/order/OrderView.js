@@ -26,7 +26,7 @@ export class OrderView extends Component {
         <AppHeader user={this.props.user} />
         <ImageBackground source={images.appbg} style={styles.appbg} resizeMode="cover" >
           <Content style={styles.content}>
-            <Button title="Club member" secondary={true} full={true} rounded={true} icon={images.icons.briefcase} onPress={() => { /* ON BUTTON PRESS */ }} />
+            <Button title="Club member" secondary={true} full={true} rounded={true} icon={images.icons.briefcase} textStyle={{fontSize: 18}} onPress={() => { /* ON BUTTON PRESS */ }} />
             
             <Spacer height={16} />
 
@@ -72,12 +72,12 @@ export class OrderView extends Component {
             
             <Grid >
               <Col style={{paddingRight: 4, width: 134}}>
-                <Button title="New Order" full={true} white={true} onPress={() => { /* ON NEW ORDER BUTTON PRESS*/ }} />
+                <Button title="New order" full={true} white={true} onPress={() => { /* ON NEW ORDER BUTTON PRESS*/ }} />
                 <Spacer height={10} />
-                <Button title="Cancel Order" white={true} full={true} textStyle={{color: '#00000060', fontWeight: '500'}} onPress={() => { /* ON CANCEL ORDER BUTTON PRESS*/ }}  />
+                <Button title="Cancel order" white={true} full={true} textStyle={styles.cancelButton} onPress={() => { /* ON CANCEL ORDER BUTTON PRESS*/ }}  />
               </Col>
               <Col style={{paddingLeft: 4, flex: 1}} >
-                <Button title="Checkout" full={true} block={true} onPress={() => { /* ON CHECKOUT BUTTON PRESS*/ }} />
+                <Button title="Checkout" full={true} textStyle={{fontSize: 20}} block={true} onPress={() => { /* ON CHECKOUT BUTTON PRESS*/ }} />
               </Col>
             </Grid>
             <Spacer height={30} />
